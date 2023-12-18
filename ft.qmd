@@ -86,7 +86,7 @@ fig2.update_layout(
 )
 ```
 
-#3
+#3 {orientation="columns" scrolling="true"}
 
 ```{python}
 pcol = ['pickup_datetime', 'pickup_longitude', 'pickup_latitude', 'pickup_hour']
