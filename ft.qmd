@@ -62,6 +62,8 @@ fig.update_layout(
 )
 ```
 
+## Column {width=50%}
+
 #2
 
 ```{python}
@@ -85,6 +87,8 @@ fig2.update_layout(
     coloraxis_colorbar_title='평균이동거리'
 )
 ```
+
+## Column {width=50%}
 
 #3 {orientation="columns" scrolling="true"}
 
