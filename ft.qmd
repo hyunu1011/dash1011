@@ -1,17 +1,15 @@
 ---
-title: "기말"
+title: "NYCTaxi"
 author: "정현우"
 format: dashboard
 execute: 
   enabled: true
   cache: false
   freeze: false
-  error: true
 ---
 
-#1
-
 ```{python}
+#| output: false
 import numpy as np
 import pandas as pd
 import plotly.express as px
@@ -86,13 +84,10 @@ fig2.update_layout(
     yaxis_title='요일',
     coloraxis_colorbar_title='평균이동거리'
 )
-```
 
-## Column {width=50%}
 
-#3 {orientation="columns" scrolling="true"}
 
-```{python}
+
 pcol = ['pickup_datetime', 'pickup_longitude', 'pickup_latitude', 'pickup_hour']
 dcol = ['dropoff_datetime', 'dropoff_longitude', 'dropoff_latitude', 'dropoff_hour']
 def transform(df):
@@ -144,6 +139,26 @@ fig4.update_traces(
     opacity=0.8
 )
 
-fig4.show(config={'scrollZoom':False})
 
+
+
+```
+
+# 기말고사1-(1),(2)
+
+```{python}
+#| title: 요일,시간에 따른 평균속력 시각화        
+fig.show()
+```
+
+```{python}
+#| title: 요일,시간에 따른 평균이동거리 시각화        
+fig2.show()
+```
+
+# 기말고사1-(3)
+
+```{python}
+#| title: 속력별 경로 시각화
+fig4.show(config={'scrollZoom':False})
 ```
